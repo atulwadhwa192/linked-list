@@ -138,6 +138,7 @@ int main(){
 								head=insert_at_first(head,data);
 							}
 							else{
+								head=(struct Node*) malloc(sizeof(struct Node));
 								head->data=data;
 								head->next=NULL;
 							}
@@ -151,6 +152,7 @@ int main(){
 								insert_at_last(head,data);
 							}
 							else{
+								head=(struct Node*) malloc (sizeof(struct Node));
 								head->data=data;
 								head->next=NULL;
 							}
